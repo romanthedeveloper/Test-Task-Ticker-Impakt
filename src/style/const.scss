@@ -1,0 +1,44 @@
+%null_style{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+%text_style{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+%text_style_5{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+%text_style_6{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+%fs_lh_15_24{
+  font-size: 15px;
+  line-height: 24px;
+}
+%fs_lh_23_32{
+  font-size: 23px;
+  line-height: 32px;
+}
+%d-flex_jc-center{
+  display: flex;
+  justify-content: center;
+}
+%border_text{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  //width: 100%;
+  overflow: hidden;
+}
+%w_44{
+  width: 440px;
+}
+%b-rad_8{
+  border-radius: 8px;
+}

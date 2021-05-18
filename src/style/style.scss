@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "const";
+
+* {
+  @extend %null_style;
+}
+
+body, html, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  @extend %d-flex_jc-center;
+  height: 100%;
+}
+
+input {
+  @extend %text_style;
+  @extend %fs_lh_15_24;
+  @extend %w_44;
+  @extend %b-rad_8;
+  height: 56px;
+  background: #F5F8FA;
+  outline: none;
+  margin-top: 160px;
+  border: none;
+  padding-left: 55px;
+  color: #00264C;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  @extend %text_style;
+  font-size: 13px;
+  line-height: 16px;
+  color: #728BA3;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-logo {
+  @extend %d-flex_jc-center;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  align-items: center;
+}
+
+.list-wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 38, 76, 0.1);
+  @extend %b-rad_8;
+  padding: 0 16px;
+  margin-top: 8px;
+}
+
+.row-ticker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 10px 16px 16px;
+  cursor: pointer;
+  height: 88px;
+}
+
+.border {
+  border-top: 1px solid #EDF4F7;;
+}
+
+.row-ticker-main {
+  display: flex;
+}
+
+.row-ticker-text {
+  @extend %text_style_5;
+  @extend %fs_lh_15_24;
+  margin-left: 28px;
+  color: #00264C;
+}
+
+.row-ticker-text div {
+  @extend %border_text;
+  max-width: 200px;
+}
+
+.row-ticker-text div:last-child {
+  @extend %text_style;
+  font-size: 13px;
+  align-items: center;
+  color: #8FA7BD;
+}
+
+.row-amount {
+  @extend %text_style_5;
+  @extend %fs_lh_23_32;
+  color: #37AD94;
+}
+
+.card-ticker-item {
+  @extend %d-flex_jc-center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-icon {
+  margin-top: 93px;
+}
+
+.company-name {
+  @extend %d-flex_jc-center;
+  @extend %text_style_5;
+  @extend %fs_lh_23_32;
+  color: #00264C;
+  margin-top: 34px;
+}
+
+.company-name div {
+  @extend %border_text;
+  max-width: 300px;
+}
+
+.company-selector {
+  @extend %text_style;
+  font-size: 17px;
+  line-height: 30px;
+  color: #728BA3;
+  margin-top: 4px;
+}
+
+.open-price {
+  @extend %text_style_6;
+  font-size: 30px;
+  line-height: 40px;
+  color: #00264C;
+  margin-top: 24px;
+}
+
+.difference {
+  @extend %text_style_5;
+  font-size: 17px;
+  line-height: 24px;
+  color: #37AD94;
+  display: inline-flex;
+  margin-top: 8px;
+}
+
+.red-text {
+  color: #f76363;
+}
+
+.difference img {
+  margin-left: 15px;
+  transform: rotate(90deg);
+  width: 12px;
+}
+
+.red-text img {
+  transform: rotate(180deg);
+}
+
+.loader {
+  @extend %d-flex_jc-center;
+  margin-top: 50px;
+}
+
+.row-error {
+  @extend %d-flex_jc-center;
+  align-items: center;
+  flex-direction: column;
+  color: #f76363;
+  @extend %text_style_5;
+  @extend %fs_lh_23_32;
+  & div:last-child {
+    @extend %text_style;
+    font-size: 13px;
+  }
+}
